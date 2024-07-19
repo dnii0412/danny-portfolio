@@ -2,11 +2,20 @@ import React from 'react'
 import honestLogo from '../assets/honestLogo.png'
 import phoneMarketLogo from '../assets/phoneMarketLogo.png'
 import churchLogo from '../assets/church.png'
+import Figma from '../assets/figma.png'
+import Html from '../assets/html.png'
+import JS from '../assets/js.png'
+import Rust from '../assets/rust.png'
+import PS from '../assets/ps.png'
+import ReactLg from '../assets/ReactLg.webp'
+import rating from '../assets/star.png'
+import Go from '../assets/go.png'
+import GraphQL from '../assets/graphql.png'
 
 const Skill = () => {
         const size = {
             width: '80%',
-            height: '100vh',
+            height: '80vh',
             backGroundColor: '#F5F7F8',
             // border: '1px solid'
         };
@@ -29,78 +38,169 @@ const Skill = () => {
         const expTitle = {
             fontSize : '16px'
         }
+        const ratingImgSize = {
+            width: '16px'
+        }
   return (
     <>
-    <main style={size} className='bg-base flex items-center justify-evenly shadow-sm'>
-        {/* 2 ym holder */}
-       <div className='flex items-between justify-center w-5/6 h-auto space-x-10'>
-       <section className='w-1/2 flex flex-col items-center justify-center space-y-12'>
-      <div className="mainTitle w-full ">
-        <p className='text-xl font-bold'>My Portfolio Projects</p>
-      </div>
-      {/* Job #1 title */}
-        <div className='space-y-4'>
-            {/* first project */}
-            <aside style={width} className=' h-42 rounded-xl hover:bg-white hover:shadow-sm p-6'>
-                <figure>
-                <img style={imgSize} src={honestLogo} alt="Honest Logo" />
-                </figure>
-                <div className='space-y-2 last:mb-4'>
-                <p className='font-bold'>Honest Media</p>
-                <p className='text-gray'>Реклам, зар сурталчилгааны студийн танилцуулга сайт</p>
-                </div>
-            </aside>
-            {/* second project */}
-            <aside style={width} className=' h-36 space-y-4 rounded-xl hover:bg-white hover:shadow-sm p-6'>
-                <figure>
-                <img style={imgSize} src={phoneMarketLogo} alt="Honest Logo" />
-                </figure>
-                <div className='space-y-2 last:mb-4'>
-                <p className='font-bold'>Phone Market</p>
-                <p className='text-gray'>Гар утас танилцуулгын сайт</p>
-                </div>
-            </aside>
-        </div>
-    </section>
-        {/* Exp sect below */}
-    <section className='w-1/2 flex flex-col items-center border border-borderColor rounded-xl'>
-    <div style={expTitle} className="mainTitle font-bold mt-4 ml-6">
-        <p>Experience</p>
-    </div>
-    {/* experienced work 1 */}
-        <div className='flex w-11/12 items-center justify-center space-y-6 space-x-4'>
-        <figure className='flex items-center justify-center h-auto' >
-            <img src={honestLogo} style={imgSize} alt="honestmedia.mn logo" className=''/>
-        </figure>
-        <aside className='w-10/12 h-full '>
-        <div className="title ">
-            <p>Honest Media LLC</p>
-        </div>
-        <div className="subtitle flex justify-between w-full ">
-            <p style={subTextSize}>Front End Developer</p>
-            <p style={subTextSize}>2022-2023</p>
-        </div>
-        </aside>
-        </div>
+    <main style={size} className='bg-base flex items-start justify-evenly shadow-sm'>
+      
+    <div className="skils-and-cert-holder w-5/6 flex h-auto justify-between space-x-10">
 
-        {/* experienced work 2*/}
-        <div className='flex w-11/12 items-center justify-center space-y-6 space-x-4'>
-        <figure className='flex items-center justify-center h-auto' >
-            <img src={churchLogo} style={imgSize} alt="honestmedia.mn logo" className=''/>
-        </figure>
-        <aside className='w-10/12 h-full '>
-        <div className="title ">
-            <p>First Church</p>
-        </div>
-        <div className="subtitle flex justify-between w-full ">
-            <p style={subTextSize}> Sound engineer, Technician</p>
-            <p style={subTextSize}>2022-Present</p>
-        </div>
-        </aside>
-        </div>
-    </section>
-        </div>
-        {/* skills section below */}
+        {/* skills holder 1 by 1 */}
+        <section className="container-0 w-1/2 h-auto border border-borderColor rounded-xl flex flex-col items-cbenter justify-around">
+                <div className="title-of-all w-5/6 h-12 flex justify-start items-center">
+                    <p style={expTitle} className='font-bold '>Skills</p>
+                </div>
+            {/* both holder */}
+            <article className='w-5/6 flex h-auto items-start '  >
+                {/* line 0  */}
+                <div className="line-0 w-1/2 space-y-2 ">
+                    {/* figma rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={Figma} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>Figma</p>
+                            </div>
+                            <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                <img src={rating} style={ratingImgSize} alt="2/5" />
+                                <img src={rating} style={ratingImgSize} alt="3/5" />
+                            </figure>
+                        </article>
+                    </aside>
+                    {/* PS rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={PS} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>PhotShop</p>
+                            </div>
+                    =        <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                <img src={rating} style={ratingImgSize} alt="2/5" />
+                            </figure>
+                        </article>
+                    </aside>
+                    {/* React rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={ReactLg} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>React</p>
+                            </div>
+                            <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                <img src={rating} style={ratingImgSize} alt="2/5" />
+                            </figure>
+                        </article>
+                    </aside>
+                    {/* JS rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={JS} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>JavaScript</p>
+                            </div>
+                            <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                <img src={rating} style={ratingImgSize} alt="2/5" />
+                                <img src={rating} style={ratingImgSize} alt="3/5" />
+                            </figure>
+                        </article>
+                    </aside>
+                </div>
+                {/* line 1 */}
+                <div className="line-1 w-1/2 space-y-2 ">
+                    {/* Rust rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={Rust} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>Rust</p>
+                            </div>
+                            <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                {/* <img src={rating} style={ratingImgSize} alt="2/5" /> */}
+                            </figure>
+                        </article>
+                    </aside>
+                    {/* GoLang rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={Go} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>GoLang</p>
+                            </div>
+                            <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                {/* <img src={rating} style={ratingImgSize} alt="2/5" /> */}
+                            </figure>
+                        </article>
+                    </aside>
+                    {/* GraphQl rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={GraphQL} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>GraphQL</p>
+                            </div>
+                            <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                {/* <img src={rating} style={ratingImgSize} alt="2/5" /> */}
+                            </figure>
+                        </article>
+                    </aside>
+                    {/* HTMl,CSS rating */}
+                    <aside className="1 flex items-center">
+                        <figure>
+                            <img style={imgSize} src={Html} alt="" />
+                        </figure>
+                        {/* skills title and rating star images */}
+                        <article>
+                            <div className="title">
+                                <p>HTMl,CSS</p>
+                            </div>
+                            <figure className='flex'>
+                                <img src={rating} style={ratingImgSize} alt="1/5" />
+                                <img src={rating} style={ratingImgSize} alt="2/5" />
+                                <img src={rating} style={ratingImgSize} alt="3/5" />
+                            </figure>
+                        </article>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        {/* sertofocates section below */}
+        <section className="container-1 w-1/2 h-auto border border-borderColor rounded-xl">
+
+        </section>
+
+    </div>    
+
     </main>
     </>
   )

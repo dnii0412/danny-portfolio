@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Navbar = () => {
+  // function clickProjects(){
+  //   location.href("")
+  // }
   return (
     <>
       <header className='top-8 w-full fixed h-12 flex items-center justify-center '>

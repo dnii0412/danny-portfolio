@@ -4,6 +4,7 @@ import honestV1 from '../assets/honestv1.webp';
 import PhoneMarket from '../assets/phoneMarket.webp';
 
 const Stuffs = () => {
+
     const size = {
         width: '80%',
         height: '36vh',
@@ -20,13 +21,15 @@ const Stuffs = () => {
     };
     function honestWsClick() {
         window.open("https://honestmedia.mn/");
-        console.log("Opened the Honest Media official website (but v1!)");
+        console.log("Honest Media first ver WebSite click activeted");
     }
     function phoneClick() {
-        window.open("https://phonemarket-ed42e.web.app/index.html")
+        window.open("https://phonemarket-ed42e.web.app/index.html");
+        console.log("phone Click activated!")
     }
     function honestV2Click() {
-        alert("This project isn't hosted on public yet!")
+        window.alert("This Website haven't hosted yet! ");
+        console.log("alert pop up activated")
     }
     return (
         <>
@@ -42,10 +45,10 @@ const Stuffs = () => {
                                 src={honestV1}
                                 style={sec}
                                 alt="main WS of HonestMedia"
-                                className="rounded-xl transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                                className="rounded-xl transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm z-10"
                             />
                         </button>
-                        <div className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <div onClick={honestWsClick} className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <button className="text-white text-lg w-32">View Page</button>
                         </div>
                     </figure>
@@ -57,10 +60,10 @@ const Stuffs = () => {
                                 src={honestV2}
                                 style={mainImgSize}
                                 alt="main WS of HonestMedia"
-                                className="rounded-xl transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                                className="rounded-xl transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm z-10"
                             />
                         </button>
-                        <div className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <div onClickCapture={honestV2Click} className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <button className="text-white text-lg w-32">View Page</button>
                         </div>
                     </figure>
@@ -72,10 +75,10 @@ const Stuffs = () => {
                                 src={PhoneMarket}
                                 style={third}
                                 alt="main WS of HonestMedia"
-                                className="rounded-xl transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                                className="rounded-xl transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm z-10"
                             />
                         </button>
-                        <div className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <div onClick={phoneClick} className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <button className="text-white text-lg w-32">View Page</button>
                         </div>
                     </figure>

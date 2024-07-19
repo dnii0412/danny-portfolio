@@ -1,8 +1,10 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Stuffs from './components/Stuffs'
-import Skill from './components/Skill'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Stuffs from './components/Stuffs';
+import Skill from './components/Skill';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
 
 const App = () => {
   <style>
@@ -13,7 +15,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <Stuffs/>
+      <Experience/>
       <Skill/>
+      <Contact/>
     </div>
   )
 }
