@@ -1,4 +1,5 @@
 import React from 'react'
+import '../index.css'
 import honestLogo from '../assets/honestLogo.png'
 import phoneMarketLogo from '../assets/phoneMarketLogo.png'
 import churchLogo from '../assets/church.png'
@@ -15,9 +16,6 @@ import GraphQL from '../assets/graphql.png'
 const Skill = () => {
         const size = {
             width: '80%',
-            height: '80vh',
-            backGroundColor: '#F5F7F8',
-            // border: '1px solid'
         };
         const imgSize = {
             width: '36px',
@@ -43,21 +41,20 @@ const Skill = () => {
         }
   return (
     <>
-    <main style={size} className='bg-base flex items-start justify-evenly shadow-sm'>
-      
-    <div className="skils-and-cert-holder w-5/6 flex h-auto justify-between space-x-10">
+    <main style={size} className='bg-base flex items-start justify-evenly shadow-sm pb-12'>   
+    <div className="skills-and-cert-holder w-5/6 flex justify-between sm-280:space-x-0 sm-280:flex-col sm:flex-col mt-8">
 
         {/* skills holder 1 by 1 */}
-        <section className="container-0 w-1/2 h-auto border border-borderColor rounded-xl flex flex-col items-cbenter justify-around">
+        <section className="container w-1/2 border border-borderColor rounded-xl flex flex-col items-between justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4">
                 <div className="title-of-all w-5/6 h-12 flex justify-start items-center">
-                    <p style={expTitle} className='font-bold '>Skills</p>
+                    <p style={expTitle} className='font-bold'>Skills</p>
                 </div>
-            {/* both holder */}
-            <article className='w-5/6 flex h-auto items-start '  >
+            {/* both holder */} 
+            <article className='w-full flex items-between justifycenter sm-280:w-full sm-280:flex-col sm:flex-col lg:flex-row sm:w-full lg:w-5/6'  >
                 {/* line 0  */}
-                <div className="line-0 w-1/2 space-y-2 ">
+                <div className="w-1/2 space-y-2 flex flex-col justify-center sm-280:w-full sm:w-full lg:w-1/2 ">
                     {/* figma rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={Figma} alt="" />
                         </figure>
@@ -74,7 +71,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* PS rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={PS} alt="" />
                         </figure>
@@ -83,14 +80,14 @@ const Skill = () => {
                             <div className="title">
                                 <p>PhotShop</p>
                             </div>
-                    =        <figure className='flex'>
+                            <figure className='flex'>
                                 <img src={rating} style={ratingImgSize} alt="1/5" />
                                 <img src={rating} style={ratingImgSize} alt="2/5" />
                             </figure>
                         </article>
                     </aside>
                     {/* React rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={ReactLg} alt="" />
                         </figure>
@@ -106,7 +103,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* JS rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={JS} alt="" />
                         </figure>
@@ -124,9 +121,9 @@ const Skill = () => {
                     </aside>
                 </div>
                 {/* line 1 */}
-                <div className="line-1 w-1/2 space-y-2 ">
+                <div className="w-1/2 space-y-2 flex flex-col justify-center sm-280:w-full sm:w-full lg:w-1/2">
                     {/* Rust rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={Rust} alt="" />
                         </figure>
@@ -142,7 +139,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* GoLang rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={Go} alt="" />
                         </figure>
@@ -158,7 +155,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* GraphQl rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={GraphQL} alt="" />
                         </figure>
@@ -174,7 +171,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* HTMl,CSS rating */}
-                    <aside className="1 flex items-center">
+                    <aside className="1 flex items-center space-x-2">
                         <figure>
                             <img style={imgSize} src={Html} alt="" />
                         </figure>
@@ -192,12 +189,12 @@ const Skill = () => {
                     </aside>
                 </div>
             </article>
-        </section>
+        </section> 
 
         {/* sertofocates section below */}
-        <section className="container-1 w-1/2 h-auto border border-borderColor rounded-xl">
+        {/* <section className=" w-1/2 ">
 
-        </section>
+        </section> */}
 
     </div>    
 

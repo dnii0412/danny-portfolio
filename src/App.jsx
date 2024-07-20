@@ -7,18 +7,24 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 
 const App = () => {
-  <style>
 
-  </style>
+  const screenSize =  {
+    width: '100%',
+  };
+
   return (
-    <div className='container w-full h-auto bg-almond flex flex-col items-center'>
-      <Navbar/>
+    <>
+     <div style={screenSize} className='flex flex-col items-center justify-center bg-white h-auto '>
+      
+     <Navbar/>
       <Hero/>
       <Stuffs/>
       <Experience/>
       <Skill/>
       <Contact/>
-    </div>
+    
+      </div> 
+    </>
   )
 }
 

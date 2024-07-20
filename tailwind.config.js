@@ -3,7 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  ],    
   theme: {
     container: {
       padding: {
@@ -16,14 +16,15 @@ export default {
       fontweight: {
         harline: '100',
         extraLight: ''
-      }
+      },
+
     },
     colors:{
-      white: '#EEEDED',
+      white: '#F8F9FA',
       trasnparent: 'transparent',
       almond : '#EEEEEE',
       brown : '#B08968',
-      base: '#F7F7F7',
+      base: '#fff',
       semibrown: '#523724',
       grey: '#F2F4F8  ',
       border: '#EEEDEB',
@@ -35,6 +36,9 @@ export default {
       fontFamily:{
         sans: ['Roboto', 'sans-serif'],
       },
+      screens: {
+        'sm-280': '280px',
+      },
       gridTemplateColumns:{
         '70/30': '70/28',
         'auto-fill-100': 'repeat(auto-fill, minmax(100px, 1fr))',
@@ -42,6 +46,6 @@ export default {
       },
     },
   },
-  plugins: [
-  ],
+  variants: {},
+  plugins: [],
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css'
 import honestV2 from '../assets/honestV2.webp';
 import honestV1 from '../assets/honestv1.webp';
 import PhoneMarket from '../assets/phoneMarket.webp';
@@ -7,8 +8,8 @@ const Stuffs = () => {
 
     const size = {
         width: '80%',
-        height: '36vh',
-        backgroundColor: '#F5F7F8',
+        // height: '36vh',
+        backgroundColor: '',
     };
     const mainImgSize = {
         width: '400px'
@@ -34,10 +35,10 @@ const Stuffs = () => {
     return (
         <>
             <main style={size} className='bg-base shadow-sm flex flex-col items-center justify-center h-full space-y-12'>
-                <div className='w-full flex justify-center text-4xl font-bold'>
+                <div className='w-full flex justify-center text-4xl font-bold mt-24'>
                     <p>Stuff I've done</p>
                 </div>
-                <section className="container flex w-full items-center justify-center">
+                <section className="container flex w-full items-center justify-center sm:flex-row sm-280:flex-col sm-280:space-y-1 sm:h-auto md:flex-row lg:flex-row xl:flex-row 2xl-flex-row">
                     {/* first project */}
                     <figure className="relative flex flex-col items-center justify-center group overflow-hidden">
                         <button onClick={honestWsClick} style={{ border: 'none', background: 'none' }}>
