@@ -44,7 +44,7 @@ const Hero = () => {
                 <aside>
                     <div className="main-title flex-wrap w-9/12 space-y-4">
                         <h1 className='text-4xl font-semibold'>I'm a Front End Developer</h1>
-                        <p style={customColor} className='text-lg text-gray  '>Hi there! I'm <a className='font-bold'>Danny Otgontsetseg</a> , a friendly Front End developer who loves making cool stuff on the internet. I'm like a digital handyman—I build the behind-the-scenes magic (that's the back-end) and create user-friendly designs (that's the front-end). My goal? Making websites and apps that are not just functional but also super easy and fun to use. Let's create some tech magic together!</p>
+                        <p style={customColor} className='text-lg text-gray  '>Hi there! I'm <a className='font-bold'>Danny Otgontsetseg</a> , a friendly Front End developer who loves making cool stuff on the internet. When I'm not coding, I enjoy learning about the latest developments in tech and finding inspiration from other developers. </p>
                     </div>
                     {/* add social icon soon */}
                     <div className="icons flex space-x-8 text-lg mt-6 text-gray cursor-pointer ">
