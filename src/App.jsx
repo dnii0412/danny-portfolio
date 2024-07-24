@@ -16,7 +16,6 @@ const App = () => {
     <>
      <div style={screenSize} className='flex flex-col items-center justify-center bg-white h-auto '>
       
-     {/* <Navbar/> */}
       <Hero/>
       <Stuffs/>
       <Experience/>
