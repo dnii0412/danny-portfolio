@@ -25,7 +25,8 @@ const Navbar = () => {
         <nav className='w-72 bg-white flex items-center justify-center h-full rounded-full drop-shadow-lg font-bold'>
           <ul className='border-borderColor flex w-full justify-around text-black text-lg z-50 relative'>
             <li className='transition du`ration-200 hover:text-brown cursor-pointer' aria-label="Projects">
-            <Link to="/">Home</Link>
+            {/* <Link to="/">Home</Link> */}
+            home
             </li>
             <li className='transition duration-200 hover:text-brown cursor-pointer' aria-label="Skills">
               <Link to="/Stuff">Stuffs</Link>
