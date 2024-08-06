@@ -19,6 +19,7 @@ const Skill = () => {
         };
         const imgSize = {
             width: '36px',
+            height: '36px',
             border: '1px solid #E5E7EB',
             borderRadius: '100%',
             padding: '4px',
@@ -41,20 +42,18 @@ const Skill = () => {
         }
   return (
     <>
-    <main style={size} className='bg-base flex items-start justify-evenly shadow-sm pb-12'>   
-    <div className="skills-and-cert-holder w-5/6 flex justify-between sm-280:space-x-0 sm-280:flex-col sm:flex-col mt-8">
+    <main style={size} className='bg-base flex items-center justify-evenly shadow-sm pb-12'>   
+    <div className="flex items-between justify- w-5/6 space-x-10 sm-280:flex-col sm-280:space-x-0 sm:flex-col lg:flex-row sm:justify-center sm:space-x-0 lg:space-x-10 mt-24">
 
         {/* skills holder 1 by 1 */}
-        <section className="container w-1/2 border border-borderColor rounded-xl flex flex-col items-between justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4">
-                <div className="title-of-all w-5/6 h-12 flex justify-start items-center">
-                    <p style={expTitle} className='font-bold'>Skills</p>
-                </div>
+        <fieldset className="w-1/2 border border-borderColor rounded-xl flex flex-col items-center justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4">
+                    <legend style={expTitle} className='font-bold ml-8'>Skills</legend>
             {/* both holder */} 
-            <article className='w-full flex items-between justifycenter sm-280:w-full sm-280:flex-col sm:flex-col lg:flex-row sm:w-full lg:w-5/6'  >
+            <article className='w-full flex items-between justify-center sm-280:w-full sm-280:flex-col sm:flex-col lg:flex-row sm:w-full lg:w-5/6'  >
                 {/* line 0  */}
                 <div className="w-1/2 space-y-2 flex flex-col justify-center sm-280:w-full sm:w-full lg:w-1/2 ">
                     {/* figma rating */}
-                    <aside className="1 flex items-center space-x-2">
+                    <aside className="1 flex items-center space-x-2 w-full">
                         <figure>
                             <img style={imgSize} src={Figma} alt="" />
                         </figure>
@@ -71,7 +70,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* PS rating */}
-                    <aside className="1 flex items-center space-x-2">
+                    <aside className="1 flex items-center space-x-2 w-full">
                         <figure>
                             <img style={imgSize} src={PS} alt="" />
                         </figure>
@@ -87,7 +86,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* React rating */}
-                    <aside className="1 flex items-center space-x-2">
+                    <aside className="1 flex items-center space-x-2 w-full">
                         <figure>
                             <img style={imgSize} src={ReactLg} alt="" />
                         </figure>
@@ -103,7 +102,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* JS rating */}
-                    <aside className="1 flex items-center space-x-2">
+                    <aside className="1 flex items-center space-x-2 w-full">
                         <figure>
                             <img style={imgSize} src={JS} alt="" />
                         </figure>
@@ -123,7 +122,7 @@ const Skill = () => {
                 {/* line 1 */}
                 <div className="w-1/2 space-y-2 flex flex-col justify-center sm-280:w-full sm:w-full lg:w-1/2">
                     {/* Rust rating */}
-                    <aside className="1 flex items-center space-x-2">
+                    <aside className="1 flex items-center space-x-2 w-full">
                         <figure>
                             <img style={imgSize} src={Rust} alt="" />
                         </figure>
@@ -139,7 +138,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* GoLang rating */}
-                    <aside className="1 flex items-center space-x-2">
+                    <aside className="1 flex items-center space-x-2 w-full">
                         <figure>
                             <img style={imgSize} src={Go} alt="" />
                         </figure>
@@ -155,7 +154,7 @@ const Skill = () => {
                         </article>
                     </aside>
                     {/* GraphQl rating */}
-                    <aside className="1 flex items-center space-x-2">
+                    <aside className="1 flex items-center space-x-2 w-full">
                         <figure>
                             <img style={imgSize} src={GraphQL} alt="" />
                         </figure>
@@ -168,12 +167,12 @@ const Skill = () => {
                                 <img src={rating} style={ratingImgSize} alt="1/5" />
                                 {/* <img src={rating} style={ratingImgSize} alt="2/5" /> */}
                             </figure>
-                        </article>
+                      </article>
                     </aside>
                     {/* HTMl,CSS rating */}
-                    <aside className="1 flex items-center space-x-2">
-                        <figure>
-                            <img style={imgSize} src={Html} alt="" />
+                        <aside className=" flex items-center space-x-2 w-full ">
+                        <figure className=''>
+                            <img className='w-full h-full object-cover' style={imgSize} src={Html} alt="" />
                         </figure>
                         {/* skills title and rating star images */}
                         <article>
@@ -189,12 +188,21 @@ const Skill = () => {
                     </aside>
                 </div>
             </article>
-        </section> 
+        </fieldset> 
 
-        {/* sertofocates section below */}
-        {/* <section className=" w-1/2 ">
+        {/* sertifocates section below */}
+        <section className='w-1/2 rounded-xl flex flex-col items-center justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4'>
+        {/* <div className='w-full h-full'>
+            <p className='font-bold ml-8'>FAQ</p>
+            <button className='flex justify-between w-full'>
+                <span>+</span>
+            </button>
+            <div>
+                <div>This is the answer</div>
+            </div>
+        </div> */}
 
-        </section> */}
+        </section>
 
     </div>    
 
