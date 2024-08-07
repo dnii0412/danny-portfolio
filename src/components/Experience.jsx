@@ -45,15 +45,15 @@ const exp = () => {
                     <p className='text-xl font-bold'>My Portfolio Projects</p>
                 </div>
                 {/* Job #1 title */}
-                <div className='space-y-4'>
+                <div className='space-y-4 w-full'>
                     {/* first project */}
-                    <aside onClick={honestWsClick}  style={width} className=' h-42 space-y-4 rounded-xl hover:bg-white hover:shadow-sm p-6 cursor-pointer sm:w-full'>
+                    <aside onClick={honestWsClick} style={width} className=' h-42 space-y-4 rounded-xl hover:bg-white hover:shadow-sm p-6 cursor-pointer sm:w-full'>
                         <figure>
                         <img style={imgSize} src={honestLogo} alt="Honest Logo" />
                         </figure>
                         <div className='space-y-2 last:mb-4'>
-                        <p className='font-bold'>Honest Media</p>
-                        <p className='text-gray'>TV advertisement company (Version 2 haven't hosted yet)</p>
+                            <p className='font-bold'>Honest Media</p>
+                            <p className='text-gray'>TV advertisement company (haven't hosted yet)</p>
                         </div>
                     </aside>
                     {/* second project */}
@@ -63,16 +63,14 @@ const exp = () => {
                         </figure>
                         <div className='space-y-2 last:mb-4'>
                         <p className='font-bold'>Phone Market</p>
-                        <p className='text-gray'>Phone market sketch Website(Related on PC)</p>
+                        <p className='text-gray'>Phone market sketch Website (Related on PC)</p>
                         </div>
                     </aside>
                 </div>
             </section>
             {/* Exp sect below */}
-            <section className='w-1/2 flex flex-col items-center border border-borderColor rounded-xl sm-280:w-full sm:w-full lg:w-1/2 pb-12 mt-8'>
-                <div className="title-of-all w-5/6 h-12 flex justify-start items-center">
-                    <p style={expTitle} className='font-bold '>Experience</p>
-                </div>
+            <fieldset className='w-1/2 flex flex-col items-center border border-borderColor rounded-xl sm-280:w-full sm:w-full lg:w-1/2 pb-12 mt-8'>
+                    <legend style={expTitle} className='font-bold ml-8 '>Experience</legend>
                 {/* experienced work 1 */}
                 <div className='flex w-11/12 items-center justify-center space-y-6 space-x-4 '>
                 <figure className='flex items-center justify-center h-auto' >
@@ -104,7 +102,7 @@ const exp = () => {
                 </div>
                 </aside>
                 </div>
-            </section>
+            </fieldset>
         </div>
     </main>
     </>
