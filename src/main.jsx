@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 // import Hero from '../src/assets/Hero'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -15,15 +12,15 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyA-iiDQ2VHeHdAesR_nXApNIi6AtK05tj4",
-  authDomain: "danny-0412.firebaseapp.com",
-  projectId: "danny-0412",
-  storageBucket: "danny-0412.appspot.com",
-  messagingSenderId: "215294704854",
-  appId: "1:215294704854:web:ffde2e4f4d5f2b5bb81d77",
-  measurementId: "G-80STT49NWJ"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyA-iiDQ2VHeHdAesR_nXApNIi6AtK05tj4",
+//   authDomain: "danny-0412.firebaseapp.com",
+//   projectId: "danny-0412",
+//   storageBucket: "danny-0412.appspot.com",
+//   messagingSenderId: "215294704854",
+//   appId: "1:215294704854:web:ffde2e4f4d5f2b5bb81d77",
+//   measurementId: "G-80STT49NWJ"
+// };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

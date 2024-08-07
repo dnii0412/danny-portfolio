@@ -195,7 +195,7 @@ const Skill = () => {
         {/* <section className=" w-1/2 ">
 
         </section> */}
-
+    
     </div>    
 
     </main>
