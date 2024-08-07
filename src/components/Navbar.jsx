@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import '../index.css'
 import Hero from '../components/Hero'
 import Stuff from '../components/Stuffs'
@@ -10,14 +10,6 @@ const Navbar = () => {
   // function cackProjects(){
   //   location.href("")
   // }
-
-  function homeClick(){
-
-  };
-  function expClick(){
-  };
-  function contactClick(){
-  };
 
   return (
     <>

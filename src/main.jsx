@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 // import Hero from '../src/assets/Hero'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+// import {
+  // createBrowserRouter,
+  // RouterProvider,
+// } from "react-router-dom";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -26,16 +26,16 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
-// react router DOM below 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>,
-  },
-]);
+// // react router DOM below 
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <App/>,
+//   },
+// ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

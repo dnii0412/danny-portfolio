@@ -31,14 +31,11 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
-<<<<<<< HEAD
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.7",
-=======
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
->>>>>>> 1ef3819543167b6cffe6261352d731cba3e3326d
     "vite": "^5.3.1"
   }
 }
