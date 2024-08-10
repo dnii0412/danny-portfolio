@@ -49,7 +49,7 @@ const Skill = () => {
         <fieldset className="w-1/2 border border-borderColor rounded-xl flex flex-col items-center justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4">
                     <legend style={expTitle} className='font-bold ml-8'>Skills</legend>
             {/* both holder */} 
-            <article className='w-full flex items-between justify-center sm-280:w-full sm-280:flex-col sm:flex-col lg:flex-row sm:w-full lg:w-5/6'  >
+            <article className='w-full flex items-between justify-center sm-280:w-3/4 sm:w-3/4 md:w-3/4 lg-3/4  sm-280:flex-col sm:flex-col lg:flex-row lg:w-5/6'  >
                 {/* line 0  */}
                 <div className="w-1/2 space-y-2 flex flex-col justify-center sm-280:w-full sm:w-full lg:w-1/2 ">
                     {/* figma rating */}
@@ -202,7 +202,7 @@ const Skill = () => {
             </div>
         </div> */}
 
-        </section> */
+        </section> 
     
     </div>    
 
