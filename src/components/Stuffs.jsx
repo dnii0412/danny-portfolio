@@ -1,5 +1,7 @@
 import React from 'react';
 import '../index.css'
+import {motion} from 'framer-motion'
+import {fadeIn} from '../components/variants'
 import honestV2 from '../assets/honestV2.webp';
 import honestV1 from '../assets/honestv1.webp';
 import PhoneMarket from '../assets/phoneMarket.webp';
@@ -8,7 +10,7 @@ const Stuffs = () => {
 
     const size = {
         width: '80%',
-        // height: '36vh',
+        height: '90vh',
         backgroundColor: '',
     };
     const mainImgSize = {
@@ -36,11 +38,21 @@ const Stuffs = () => {
         <>
             <main style={size} className='bg-base shadow-sm flex flex-col items-center justify-center h-full space-y-12'>
                 <div className='w-full flex justify-center text-4xl font-bold mt-24'>
-                    <p>Stuff I've done</p>
+                    <motion.p
+                        variants={fadeIn("right", 0.4)}
+                        initial="hiddenLong"
+                        whileInView={"show"}
+                        viewport={{once:false, amount:0.7}}
+                    >Stuff I've done</motion.p>
                 </div>
                 <section className="container flex w-full items-center justify-center sm:flex-row sm-280:flex-col sm-280:space-y-1 sm:h-auto md:flex-row lg:flex-row xl:flex-row 2xl-flex-row">
                     {/* first project */}
-                    <figure className="relative flex flex-col items-center justify-center group overflow-hidden">
+                    <motion.figure className="relative flex flex-col items-center justify-center group overflow-hidden"
+                            variants={fadeIn("up", 0.3)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{once:false, amount:0.7}}                          
+                    >
                         <button onClick={honestWsClick} style={{ border: 'none', background: 'none' }}>
                             <img
                                 src={honestV1}
@@ -52,10 +64,15 @@ const Stuffs = () => {
                         <div onClick={honestWsClick} className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <button className="text-white text-lg w-32">View Page</button>
                         </div>
-                    </figure>
+                    </motion.figure>
 
                     {/* second project */}
-                    <figure className="relative flex flex-col items-center justify-center group overflow-hidden">
+                    <motion.figure className="relative flex flex-col items-center justify-center group overflow-hidden"
+                            variants={fadeIn("up", 0.1)}
+                            initial="hiddenLong"
+                            whileInView={"show"}
+                            viewport={{once:false, amount:0.7}}                      
+                    >
                         <button onClick={honestV2Click} style={{ border: 'none', background: 'none' }}>
                             <img
                                 src={honestV2}
@@ -67,10 +84,15 @@ const Stuffs = () => {
                         <div onClickCapture={honestV2Click} className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <button className="text-white text-lg w-32">View Page</button>
                         </div>
-                    </figure>
+                    </motion.figure>
 
                     {/* third project */}
-                    <figure className="relative flex flex-col items-center justify-center group overflow-hidden">
+                    <motion.figure className="relative flex flex-col items-center justify-center group overflow-hidden"
+                            variants={fadeIn("up", 0.6)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{once:false, amount:0.7}}                      
+                    >
                         <button onClick={phoneClick} style={{ border: 'none', background: 'none' }}>
                             <img
                                 src={PhoneMarket}
@@ -82,7 +104,7 @@ const Stuffs = () => {
                         <div onClick={phoneClick} className="viewBtn border border-base absolute rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <button className="text-white text-lg w-32">View Page</button>
                         </div>
-                    </figure>
+                    </motion.figure>
                 </section>
             </main>
         </>

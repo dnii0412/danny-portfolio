@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import ReactDOM from 'react-dom';
+// import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stuffs from './components/Stuffs';
 import Skill from './components/Skill';
@@ -16,7 +17,7 @@ const App = () => {
     <>
      <div style={screenSize} className='flex flex-col items-center justify-center bg-white h-auto '>
       
-     <Navbar/>
+     {/* <Navbar/> */}
       <Hero/>
       <Stuffs/>
       <Experience/>

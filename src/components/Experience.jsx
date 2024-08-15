@@ -53,7 +53,7 @@ const exp = () => {
                         </figure>
                         <div className='space-y-2 last:mb-4'>
                             <p className='font-bold'>Honest Media</p>
-                            <p className='text-gray'>TV advertisement company (haven't hosted yet)</p>
+                            <p className='text-gray'>TV advertisement company (Haven't published yet)</p>
                         </div>
                     </aside>
                     {/* second project */}
@@ -63,7 +63,7 @@ const exp = () => {
                         </figure>
                         <div className='space-y-2 last:mb-4'>
                         <p className='font-bold'>Phone Market</p>
-                        <p className='text-gray'>Phone market sketch Website (Related on PC)</p>
+                        <p className='text-gray'>Phone market sketch Website (Related on every other bigger screens except for mobile devices)</p>
                         </div>
                     </aside>
                 </div>
