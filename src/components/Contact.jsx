@@ -1,10 +1,7 @@
 import React from 'react'
 import '../index.css'
-<<<<<<< HEAD
 import {motion} from 'framer-motion'
 import {fadeIn} from '../components/variants'
-=======
->>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
 const Contact = () => {
     const size = {
         width: '80%',
@@ -32,7 +29,6 @@ const Contact = () => {
             {/* social section below */}
             <section className='w-1/2 flex flex-col sm-280:w-full sm:w-1/2 lg:w-1/2'>
                 <div className="flex items-center justify-start text-lg space-x-6 text-gray">
-<<<<<<< HEAD
                     <motion.i onClick={igClick} className="fa-brands fa-square-instagram hover:text-black  transition-colors duration-300"
                         variants={fadeIn("up", 0.4)}
                         initial={"hidden"}
@@ -54,27 +50,17 @@ const Contact = () => {
                         initial={"hidden"}
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}></motion.i>
-=======
-                    <i onClick={igClick} className="fa-brands fa-square-instagram hover:text-black  transition-colors duration-300"></i>
-                    <i onClick={fbClick} className="fa-brands fa-facebook hover:text-black  transition-colors duration-300"></i>
-                    <i onClick={lnkClick} className="fa-brands fa-linkedin hover:text-black  transition-colors duration-300"></i>
-                    <i onClick={ytClick} className="fa-brands fa-youtube hover:text-black  transition-colors duration-300"></i>
->>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                 </div>
             </section>
             {/* text section below */}
             <section className=' w-1/2 flex flex-col items-center justify-center sm-280:w-full sm-280:items-start sm:w-1/2 lg:w-1/2'>
                 <div className="w-full flex items-end justify-end sm-280:justify-start sm:justify-end">
-<<<<<<< HEAD
                     <motion.p className='text-gray font-sans text-sm align-end'
                     variants={fadeIn("up", 0.8)}
                     initial={"hidden"}
                     whileInView={"show"}
                     viewport={{once:false, amount:0.7}}
                     >© 2024 Danny Otgontsetseg. All right reserved </motion.p>
-=======
-                    <p className='text-gray font-sans text-sm align-end'>© 2024 Danny Otgontsetseg. All right reserved </p>
->>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                 </div>
             </section>
         </div>

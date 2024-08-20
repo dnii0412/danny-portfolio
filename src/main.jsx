@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from '../src/App';
 import '../src/Index.css';
 // import { BrowserRouter } from 'react-router-dom';
 // import ReactDOM from 'react-dom';
-=======
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
->>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
 // import Hero from '../src/assets/Hero'
 
 // import {
