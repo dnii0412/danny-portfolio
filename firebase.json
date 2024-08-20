@@ -1,6 +1,10 @@
 {
   "hosting": {
+<<<<<<< HEAD
     "public": "dist",
+=======
+    "public": "build",
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -11,7 +15,12 @@
         "source": "**",
         "destination": "/index.html"
       }
+<<<<<<< HEAD
     ],
     "predeploy": ["npm run build"]
+=======
+    ]
+    
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
   }
 }

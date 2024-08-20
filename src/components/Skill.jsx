@@ -12,8 +12,11 @@ import ReactLg from '../assets/ReactLg.webp'
 import rating from '../assets/star.png'
 import Go from '../assets/go.png'
 import GraphQL from '../assets/graphql.png'
+<<<<<<< HEAD
 import {motion} from 'framer-motion'
 import {fadeIn} from '../components/variants'
+=======
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
 
 const Skill = () => {
         const size = {
@@ -48,6 +51,7 @@ const Skill = () => {
     <div className="flex items-between justify- w-5/6 space-x-10 sm-280:flex-col sm-280:space-x-0 sm:flex-col lg:flex-row sm:justify-center sm:space-x-0 lg:space-x-10 mt-24">
 
         {/* skills holder 1 by 1 */}
+<<<<<<< HEAD
         <motion.fieldset className="w-1/2 border border-borderColor rounded-xl flex flex-col items-center justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4"
             variants={fadeIn("up", 0.2)}
             initial={"hidden"}
@@ -60,17 +64,25 @@ const Skill = () => {
                         whileInView={"show"}
                         viewport={{once:false, amount:0.7}}
                     >Skills</motion.legend>
+=======
+        <fieldset className="w-1/2 border border-borderColor rounded-xl flex flex-col items-center justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4">
+                    <legend style={expTitle} className='font-bold ml-8'>Skills</legend>
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
             {/* both holder */} 
             <article className='w-full flex items-between justify-center sm-280:w-3/4 sm:w-3/4 md:w-3/4 lg-3/4  sm-280:flex-col sm:flex-col lg:flex-row lg:w-5/6'  >
                 {/* line 0  */}
                 <div className="w-1/2 space-y-2 flex flex-col justify-center sm-280:w-full sm:w-full lg:w-1/2 ">
                     {/* figma rating */}
+<<<<<<< HEAD
                     <motion.aside className="1 flex items-center space-x-2 w-full"
                         variants={fadeIn("up", 0.5)}
                         initial={"hidden"}
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}
                     >
+=======
+                    <aside className="1 flex items-center space-x-2 w-full">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure>
                             <img style={imgSize} src={Figma} alt="" />
                         </figure>
@@ -85,6 +97,7 @@ const Skill = () => {
                                 <img src={rating} style={ratingImgSize} alt="3/5" />
                             </figure>
                         </article>
+<<<<<<< HEAD
                     </motion.aside>
                     {/* PS rating */}
                     <motion.aside className="1 flex items-center space-x-2 w-full"
@@ -93,6 +106,11 @@ const Skill = () => {
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}
                     >
+=======
+                    </aside>
+                    {/* PS rating */}
+                    <aside className="1 flex items-center space-x-2 w-full">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure>
                             <img style={imgSize} src={PS} alt="" />
                         </figure>
@@ -106,6 +124,7 @@ const Skill = () => {
                                 <img src={rating} style={ratingImgSize} alt="2/5" />
                             </figure>
                         </article>
+<<<<<<< HEAD
                     </motion.aside>
                     {/* React rating */}
                     <motion.aside className="1 flex items-center space-x-2 w-full"
@@ -114,6 +133,11 @@ const Skill = () => {
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}
                     >
+=======
+                    </aside>
+                    {/* React rating */}
+                    <aside className="1 flex items-center space-x-2 w-full">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure>
                             <img style={imgSize} src={ReactLg} alt="" />
                         </figure>
@@ -127,6 +151,7 @@ const Skill = () => {
                                 <img src={rating} style={ratingImgSize} alt="2/5" />
                             </figure>
                         </article>
+<<<<<<< HEAD
                     </motion.aside>
                     {/* JS rating */}
                     <motion.aside className="1 flex items-center space-x-2 w-full"
@@ -135,6 +160,11 @@ const Skill = () => {
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}
                     >
+=======
+                    </aside>
+                    {/* JS rating */}
+                    <aside className="1 flex items-center space-x-2 w-full">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure>
                             <img style={imgSize} src={JS} alt="" />
                         </figure>
@@ -149,17 +179,25 @@ const Skill = () => {
                                 <img src={rating} style={ratingImgSize} alt="3/5" />
                             </figure>
                         </article>
+<<<<<<< HEAD
                     </motion.aside>
+=======
+                    </aside>
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                 </div>
                 {/* line 1 */}
                 <div className="w-1/2 space-y-2 flex flex-col justify-center sm-280:w-full sm:w-full lg:w-1/2">
                     {/* Rust rating */}
+<<<<<<< HEAD
                     <motion.aside className="1 flex items-center space-x-2 w-full"
                         variants={fadeIn("up", 0.9)}
                         initial={"hidden"}
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}
                     >
+=======
+                    <aside className="1 flex items-center space-x-2 w-full">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure>
                             <img style={imgSize} src={Rust} alt="" />
                         </figure>
@@ -173,6 +211,7 @@ const Skill = () => {
                                 {/* <img src={rating} style={ratingImgSize} alt="2/5" /> */}
                             </figure>
                         </article>
+<<<<<<< HEAD
                     </motion.aside>
                     {/* GoLang rating */}
                     <motion.aside className="1 flex items-center space-x-2 w-full"
@@ -181,6 +220,11 @@ const Skill = () => {
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}
                     >
+=======
+                    </aside>
+                    {/* GoLang rating */}
+                    <aside className="1 flex items-center space-x-2 w-full">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure>
                             <img style={imgSize} src={Go} alt="" />
                         </figure>
@@ -194,6 +238,7 @@ const Skill = () => {
                                 {/* <img src={rating} style={ratingImgSize} alt="2/5" /> */}
                             </figure>
                         </article>
+<<<<<<< HEAD
                     </motion.aside>
                     {/* GraphQl rating */}
                     <motion.aside className="1 flex items-center space-x-2 w-full"
@@ -202,6 +247,11 @@ const Skill = () => {
                         whileInView={"showWithBounce"}
                         viewport={{once:false, amount:0.7}}
                     >
+=======
+                    </aside>
+                    {/* GraphQl rating */}
+                    <aside className="1 flex items-center space-x-2 w-full">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure>
                             <img style={imgSize} src={GraphQL} alt="" />
                         </figure>
@@ -215,6 +265,7 @@ const Skill = () => {
                                 {/* <img src={rating} style={ratingImgSize} alt="2/5" /> */}
                             </figure>
                       </article>
+<<<<<<< HEAD
                     </motion.aside>
                     {/* HTMl,CSS rating */}
                         <motion.aside className=" flex items-center space-x-2 w-full "
@@ -222,6 +273,11 @@ const Skill = () => {
                             initial={"hidden"}
                             whileInView={"showWithBounce"}
                             viewport={{once:false, amount:0.7}}>
+=======
+                    </aside>
+                    {/* HTMl,CSS rating */}
+                        <aside className=" flex items-center space-x-2 w-full ">
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
                         <figure className=''>
                             <img className='w-full h-full object-cover' style={imgSize} src={Html} alt="" />
                         </figure>
@@ -236,10 +292,17 @@ const Skill = () => {
                                 <img src={rating} style={ratingImgSize} alt="3/5" />
                             </figure>
                         </article>
+<<<<<<< HEAD
                     </motion.aside>
                 </div>
             </article>
         </motion.fieldset> 
+=======
+                    </aside>
+                </div>
+            </article>
+        </fieldset> 
+>>>>>>> bb253e584a2b032c9589deda96da9bc78b11edb6
 
         {/* sertifocates section below */}
         <section className='w-1/2 rounded-xl flex flex-col items-center justify-around space-y-2 sm-280:items sm-280:w-full sm:w-full lg:w-1/2 pb-4'>
