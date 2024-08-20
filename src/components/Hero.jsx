@@ -46,7 +46,7 @@ const Hero = () => {
                     <motion.img style={proSize} src={Profile} className='shadow-lg' alt="Profile image" 
                         variants={fadeIn("right", 0.2)}
                         initial="hiddenLong"
-                        whileInView={"show"}
+                        whileInView={"showQuick"}
                         viewport={{once:false, amount:0.7}}
                     />
                 </figure>
@@ -71,23 +71,23 @@ const Hero = () => {
                         <motion.i onClick={igClick} className="fa-brands fa-square-instagram hover:text-black  transition-colors duration-300"
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
-                            whileInView={"show"}
+                            whileInView={"showWithBounce "}
                             viewport={{once:false, amount:0.7}}                       
                         ></motion.i>
                         <motion.i onClick={fbClick} className="fa-brands fa-facebook hover:text-black  transition-colors duration-300"
                             variants={fadeIn("up", 0.8)}
                             initial="hidden"
-                            whileInView={"show"}
+                            whileInView={"showWithBounce "}
                             viewport={{once:false, amount:0.7}}  ></motion.i>
                         <motion.i onClick={lnkClick} className="fa-brands fa-linkedin hover:text-black  transition-colors duration-300"
                             variants={fadeIn("up", 0.9)}
                             initial="hidden"
-                            whileInView={"show"}
+                            whileInView={"showWithBounce "}
                             viewport={{once:false, amount:0.7}}  ></motion.i>
                         <motion.i onClick={ytClick} className="fa-brands fa-youtube hover:text-black  transition-colors duration-300"
                             variants={fadeIn("up", 1)}
                             initial="hidden"
-                            whileInView={"show"}
+                            whileInView={"showWithBounce "}
                             viewport={{once:false, amount:0.7}}  ></motion.i>
                     </div>
                 </aside>

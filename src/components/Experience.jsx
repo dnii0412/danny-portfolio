@@ -3,7 +3,8 @@ import '../index.css'
 import honestLogo from '../assets/honestLogo.png'
 import phoneMarketLogo from '../assets/phoneMarketLogo.png'
 import churchLogo from '../assets/church.png'
-
+import {motion} from 'framer-motion'
+import {fadeIn} from '../components/variants'
 const exp = () => {
     const size = {
         width: '80%',
@@ -39,25 +40,46 @@ const exp = () => {
     <>
     <main style={size} className='bg-base flex items-center justify-evenly shadow-sm'>
         {/* 2 ym holder */}
-       <div className='flex items-between justify-center w-5/6 space-x-10 sm-280:flex-col sm-280:space-x-0 sm:flex-col lg:flex-row sm:justify-center sm:space-x-0 lg:space-x-10 mt-24'>
-            <section className='w-1/2 flex flex-col items-center justify-center space-y-12 sm-280:w-full sm:w-full lg:w-1/2'>
+       <motion.div className='flex items-between justify-center w-5/6 space-x-10 sm-280:flex-col sm-280:space-x-0 sm:flex-col lg:flex-row sm:justify-center sm:space-x-0 lg:space-x-10 mt-24'>
+            <motion.section className='w-1/2 flex flex-col items-center justify-center space-y-12 sm-280:w-full sm:w-full lg:w-1/2'
+             variants={fadeIn('up',)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{once:false, amount:0.5}}
+            >
                 <div className="mainTitle w-full ">
-                    <p className='text-xl font-bold'>My Portfolio Projects</p>
+                    <motion.p className='text-xl font-bold'
+                     variants={fadeIn("up", 0.2)}
+                     initial="hiddenLong"
+                     whileInView={"show"}
+                     viewport={{once:false, amount:0.5}}
+                     
+                    >My Portfolio Projects</motion.p>
                 </div>
                 {/* Job #1 title */}
                 <div className='space-y-4 w-full'>
                     {/* first project */}
-                    <aside onClick={honestWsClick} style={width} className=' h-42 space-y-4 rounded-xl hover:bg-white hover:shadow-sm p-6 cursor-pointer sm:w-full'>
+                    <motion.aside onClick={honestWsClick} style={width} className=' h-42 space-y-4 rounded-xl hover:bg-white hover:shadow-sm p-6 cursor-pointer sm:w-full'
+                        variants={fadeIn("up", 0.5)}
+                        initial="hidden"
+                        whileInView={"showWithBounce"}
+                        viewport={{once:false, amount:0.5}}
+                    >
                         <figure>
                         <img style={imgSize} src={honestLogo} alt="Honest Logo" />
                         </figure>
                         <div className='space-y-2 last:mb-4'>
                             <p className='font-bold'>Honest Media</p>
-                            <p className='text-gray'>TV advertisement company (Haven't published yet)</p>
+                            <p className='text-gray'>TV advertisement company (Updated version haven't published yet)</p>
                         </div>
-                    </aside>
+                    </motion.aside>
                     {/* second project */}
-                    <aside onClick={phoneClick} style={width} className=' h-42 space-y-4 rounded-xl hover:bg-white hover:shadow-sm p-6 cursor-pointer'>
+                    <motion.aside onClick={phoneClick} style={width} className=' h-42 space-y-4 rounded-xl hover:bg-white hover:shadow-sm p-6 cursor-pointer'
+                        variants={fadeIn("up", 0.7)}
+                        initial="hidden"
+                        whileInView={"showWithBounce"}
+                        viewport={{once:false, amount:0.5}}
+                    >
                         <figure>
                         <img style={imgSize} src={phoneMarketLogo} alt="Honest Logo" />
                         </figure>
@@ -65,14 +87,29 @@ const exp = () => {
                         <p className='font-bold'>Phone Market</p>
                         <p className='text-gray'>Phone market sketch Website (Related on every other bigger screens except for mobile devices)</p>
                         </div>
-                    </aside>
+                    </motion.aside>
                 </div>
-            </section>
+            </motion.section>
             {/* Exp sect below */}
-            <fieldset className='w-1/2 flex flex-col items-center border border-borderColor rounded-xl sm-280:w-full sm:w-full lg:w-1/2 pb-12 mt-8'>
-                    <legend style={expTitle} className='font-bold ml-8 '>Experience</legend>
+            <motion.fieldset className='w-1/2 flex flex-col items-center border border-borderColor rounded-xl sm-280:w-full sm:w-full lg:w-1/2 pb-12 mt-8'
+            variants={fadeIn ("up", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once:false, amount:0.5}}
+            >
+                    <motion.legend style={expTitle} className='font-bold ml-8 '
+                        variants={fadeIn ("up", 0.7)}
+                        initial= "hidden"
+                        whileInView={"show"}
+                        viewport={{once:false, amount:0.5}}
+                    >Experience</motion.legend>
                 {/* experienced work 1 */}
-                <div className='flex w-11/12 items-center justify-center space-y-6 space-x-4 '>
+                <motion.div className='flex w-11/12 items-center justify-center space-y-6 space-x-4 '
+                    variants={fadeIn ("up", 0.8)}
+                    initial="hidden"
+                    whileInView="showWithBounce"
+                    viewport={{once: false, amount:0.5}}
+                >
                 <figure className='flex items-center justify-center h-auto' >
                     <img src={honestLogo} style={imgSize} alt="honestmedia.mn logo" className=''/>
                 </figure>
@@ -85,10 +122,15 @@ const exp = () => {
                     <p style={subTextSize}>2022-2023</p>
                 </div>
                 </aside>
-                </div>
+                </motion.div>
 
                 {/* experienced work 2*/}
-                <div className='flex w-11/12 items-center justify-center space-y-6 space-x-4'>
+                <motion.div className='flex w-11/12 items-center justify-center space-y-6 space-x-4'
+                    variants={fadeIn("up", 1)}
+                    initial="hidden"
+                    whileInView={"showWithBounce"}
+                    viewport={{once:false, amount:0.5}}
+                >
                 <figure className='flex items-center justify-center h-auto' >
                     <img src={churchLogo} style={imgSize} alt="honestmedia.mn logo" className=''/>
                 </figure>
@@ -101,9 +143,9 @@ const exp = () => {
                     <p style={subTextSize}>2022-Present</p>
                 </div>
                 </aside>
-                </div>
-            </fieldset>
-        </div>
+                </motion.div>
+            </motion.fieldset>
+        </motion.div>
     </main>
     </>
   )

@@ -37,7 +37,7 @@ const Stuffs = () => {
     return (
         <>
             <main style={size} className='bg-base shadow-sm flex flex-col items-center justify-center h-full space-y-12'>
-                <div className='w-full flex justify-center text-4xl font-bold mt-24'>
+                <div className='w-full flex justify-center text-4xl font-bold '>
                     <motion.p
                         variants={fadeIn("right", 0.4)}
                         initial="hiddenLong"
@@ -50,7 +50,7 @@ const Stuffs = () => {
                     <motion.figure className="relative flex flex-col items-center justify-center group overflow-hidden"
                             variants={fadeIn("up", 0.3)}
                             initial="hidden"
-                            whileInView={"show"}
+                            whileInView={"showWithBounce"}
                             viewport={{once:false, amount:0.7}}                          
                     >
                         <button onClick={honestWsClick} style={{ border: 'none', background: 'none' }}>
@@ -70,7 +70,7 @@ const Stuffs = () => {
                     <motion.figure className="relative flex flex-col items-center justify-center group overflow-hidden"
                             variants={fadeIn("up", 0.1)}
                             initial="hiddenLong"
-                            whileInView={"show"}
+                            whileInView={"showWithBounce"}
                             viewport={{once:false, amount:0.7}}                      
                     >
                         <button onClick={honestV2Click} style={{ border: 'none', background: 'none' }}>
@@ -90,7 +90,7 @@ const Stuffs = () => {
                     <motion.figure className="relative flex flex-col items-center justify-center group overflow-hidden"
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
-                            whileInView={"show"}
+                            whileInView={"showWithBounce"}
                             viewport={{once:false, amount:0.7}}                      
                     >
                         <button onClick={phoneClick} style={{ border: 'none', background: 'none' }}>
