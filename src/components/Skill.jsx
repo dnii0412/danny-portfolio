@@ -99,7 +99,7 @@ const Skill = () => {
                         {/* skills title and rating star images */}
                         <article>
                             <div className="title">
-                                <p>PhotShop</p>
+                                <p>PhotoShop</p>
                             </div>
                             <figure className='flex'>
                                 <img src={rating} style={ratingImgSize} alt="1/5" />
